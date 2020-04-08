@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="128.289711">
+    <testcase classname="Free Crm Create Contacts" name="Free CRM Create a new contact scenario" time="28.03401">
+        <system-out>
+            <![CDATA[Given user is already on login page.........................................passed
+When title of login page is Free Crm........................................passed
+Then user enters batchautomation and Test@12345.............................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+Then user moves to new contact page.........................................passed
+Then user enter Aakash and Patel and ABCXYZ.................................passed
+Then close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free Crm Create Contacts" name="Free CRM Create a new contact scenario 2" time="30.90569">
+        <system-out>
+            <![CDATA[Given user is already on login page.........................................passed
+When title of login page is Free Crm........................................passed
+Then user enters batchautomation and Test@12345.............................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+Then user moves to new contact page.........................................passed
+Then user enter Ronak and Waghela and XYZXYZX...............................passed
+Then close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free Crm Create Contacts" name="Free CRM Create a new contact scenario 3" time="26.984691">
+        <system-out>
+            <![CDATA[Given user is already on login page.........................................passed
+When title of login page is Free Crm........................................passed
+Then user enters batchautomation and Test@12345.............................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+Then user moves to new contact page.........................................passed
+Then user enter sagar and patel and AAAXYZX.................................passed
+Then close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free Crm Login Feature" name="Free Crm Login Test Scenario" time="24.889177">
+        <system-out>
+            <![CDATA[Given user is already on login page.........................................passed
+When title of login page is Free Crm........................................passed
+Then user enters batchautomation and Test@12345.............................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................passed
+Then close the browser......................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Free Crm Login Feature" name="Free Crm Login Test Scenario 2" time="17.476143">
+        <failure message="org.junit.ComparisonFailure: expected:&lt;CRMPRO[]&gt; but was:&lt;CRMPRO[ - CRM software for customer relationship management, sales, and support.]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:117)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:146)&#13;&#10;&#9;at StepDefinitions.LoginStepDefinition.user_is_on_home_page(LoginStepDefinition.java:72)&#13;&#10;&#9;at ✽.Then user is on home page(login.feature:18)&#13;&#10;">
+            <![CDATA[Given user is already on login page.........................................passed
+When title of login page is Free Crm........................................passed
+Then user enters Tom and Test@123...........................................passed
+Then user clicks on login button............................................passed
+Then user is on home page...................................................failed
+Then close the browser......................................................skipped
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<CRMPRO[]> but was:<CRMPRO[ - CRM software for customer relationship management, sales, and support.]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinitions.LoginStepDefinition.user_is_on_home_page(LoginStepDefinition.java:72)
+	at ✽.Then user is on home page(login.feature:18)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

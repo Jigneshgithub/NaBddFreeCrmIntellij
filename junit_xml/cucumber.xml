@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="29.32972">
-    <testcase classname="Free Crm Create Contacts" name="Free CRM Create a new deal scenario" time="29.32972">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="36.446633">
+    <testcase classname="Free Crm Create Contacts" name="Free CRM Create a new deal scenario" time="36.446633">
         <system-out>
             <![CDATA[Given user is already on login page.........................................passed
 When title of login page is Free Crm........................................passed
-Then user enters username and password......................................passed
+Then user enters the username and password..................................passed
 Then user clicks on login button............................................passed
 Then user is on home page...................................................passed
 Then user moves to new deal page............................................passed

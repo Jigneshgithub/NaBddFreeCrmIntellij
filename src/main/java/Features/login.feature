@@ -14,6 +14,8 @@ Feature: Free Crm Login Feature
     Given user is already on login page
     When title of login page is Free Crm
     Then user enters <username> and <password>
+#    Then user enters the username and password
+#      | batchautomation  | Test@12345 |
     Then user clicks on login button
     Then user is on home page
     Then close the browser
@@ -22,13 +24,20 @@ Feature: Free Crm Login Feature
     Examples:
       | username        | password   |
       | batchautomation | Test@12345 |
-      | Tom             | Test@123   |
+#      | Tom             | Test@123   |
 
 #  Scenario: User is able to create new contact
-#    Given user click on contact
+#    Given user is already on login page
+#    When title of login page is Free Crm
+#    Then user enters the username and password
+#      | batchautomation  | Test@12345 |
+#    Then user clicks on login button
+#    Then user click on contact
 #    When user mouse over on contacts link
 #    Then user click on new contact link
 #    Then user fill the ftname, ltname and comapany
 #    Then user click on saveBtn
 #    Then verify new contact created
+#    Then close the browser
+
 

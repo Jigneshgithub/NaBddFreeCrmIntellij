@@ -1,5 +1,6 @@
 //package StepDefinitions;
 //
+//import cucumber.api.DataTable;
 //import cucumber.api.PendingException;
 //import cucumber.api.java.en.Given;
 //import cucumber.api.java.en.When;
@@ -15,6 +16,8 @@
 //import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.interactions.Actions;
 //import org.openqa.selenium.support.ui.Select;
+//
+//import java.util.List;
 //
 //@RunWith(Cucumber.class)
 //public class LoginStepDefinition {
@@ -51,11 +54,18 @@
 ////    }
 //
 //    // data driven -> with example keyword
-//    @Then("^user enters (.+) and (.+)$")
-//    public void user_enters_and(String username, String password){
-//        driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys(username);
-//        driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(password);
-//    }
+////    @Then("^user enters (.+) and (.+)$")
+////    public void user_enters_and(String username, String password){
+////        driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys(username);
+////        driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(password);
+////    }
+//    // data table method
+////    @Then("^user enters the username and password$")
+////    public void user_enters_the_username_and_password(DataTable credentials){
+////        List<List<String>> data = credentials.raw();
+////        driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys(data.get(0).get(0));
+////        driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(data.get(0).get(1));
+////    }
 //
 //    @Then("^user clicks on login button$")
 //    public void user_clicks_on_login_button() {
@@ -77,50 +87,51 @@
 //        driver.quit();
 //    }
 //
-////    @Given("^user is already on  home page$")
-////    public void user_is_already_on_home_page() {
-////        String title = driver.getTitle();
-////        System.out.println("Home Page : " + title);
-////        Assert.assertEquals("CRMPRO",title);
-////        System.out.println("Home Page");
-////    }
+//    @Given("^user is already on  home page$")
+//    public void user_is_already_on_home_page() {
+//        String title = driver.getTitle();
+//        System.out.println("Home Page : " + title);
+//        Assert.assertEquals("CRMPRO",title);
+//        System.out.println("Home Page");
+//    }
 //
-////    @Given("^user click on contact$")
-////    public void user_click_on_contact(){
-////        driver.findElement(By.xpath("//a[contains(text(),'Contacts')]")).click();
-////    }
-////
-////    @When("^user mouse over on contacts link$")
-////    public void user_mouse_over_on_contacts_link() {
+//    @Given("^user click on contact$")
+//    public void user_click_on_contact(){
+//        driver.switchTo().frame("mainpanel");
+//        driver.findElement(By.xpath("//a[contains(text(),'Contacts')]")).click();
+//    }
+//
+//    @When("^user mouse over on contacts link$")
+//    public void user_mouse_over_on_contacts_link() {
 ////        driver.switchTo().frame("mainpanel");
-////        Actions action = new Actions(driver);
-////        action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
-////        action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
-////    }
+//        Actions action = new Actions(driver);
+//        action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
+//        action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
+//    }
+//
+//    @Then("^user click on new contact link$")
+//    public void user_click_on_new_contact_link() {
+//        driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
+//    }
+//
+//    @Then("^user fill the ftname, ltname and comapany$")
+//    public void user_fill_the_ftname_ltname_and_comapany() {
+//        Select select = new Select(driver.findElement(By.xpath("//select[@name='title']")));
+//        select.selectByVisibleText("Mr.");
+//        driver.findElement(By.xpath("//input[@id='first_name']")).sendKeys("Akash");
+//        driver.findElement(By.xpath("//input[@id='surname']")).sendKeys("Patel");
+//        driver.findElement(By.xpath("//input[@name='client_lookup']")).sendKeys("ABC corporation");
+//    }
+//
+//    @Then("^user click on saveBtn$")
+//    public void user_click_on_saveBtn() {
+//        driver.findElement(By.xpath("//input[@type ='submit' and value='Save']")).click();
+//    }
 ////
-////    @Then("^user click on new contact link$")
-////    public void user_click_on_new_contact_link() {
-////        driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
-////    }
-////
-////    @Then("^user fill the ftname, ltname and comapany$")
-////    public void user_fill_the_ftname_ltname_and_comapany() {
-////        Select select = new Select(driver.findElement(By.xpath("//select[@name='title']")));
-////        select.selectByVisibleText("Mr.");
-////        driver.findElement(By.xpath("//input[@id='first_name']")).sendKeys("Akash");
-////        driver.findElement(By.xpath("//input[@id='surname']")).sendKeys("Patel");
-////        driver.findElement(By.xpath("//input[@name='client_lookup']")).sendKeys("ABC corporation");
-////    }
-////
-////    @Then("^user click on saveBtn$")
-////    public void user_click_on_saveBtn() {
-////        driver.findElement(By.xpath("//input[@type ='submit' and value='Save']")).click();
-////    }
-////
-////    @Then("^verify new contact created$")
-////    public void verify_new_contact_created() {
-////
-////    }
+//    @Then("^verify new contact created$")
+//    public void verify_new_contact_created() {
+//
+//    }
 //
 //    @Then("^user moves to new contact page$")
 //    public void user_moves_to_new_contact_page(){

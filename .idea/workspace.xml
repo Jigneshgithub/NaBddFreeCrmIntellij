@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f3a63d8-feca-4512-b4bf-9cfae188082e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Features/tagging.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StepDefinitions/TaggingStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json_output/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/json_output/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junit_xml/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/junit_xml/cucumber.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Runner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Runner/TestRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Features/contacts.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Features/deals.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Features/dealsmap.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Features/login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Features/tagging.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Runner/TestRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/DealStepDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/DealsStepWithMapDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/LoginStepDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/TaggingStepDefinition.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +47,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Runner" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Jignesh\intellejProjects2\seleniumprojects\NABddCucumber\src\test\java" />
       <recent name="D:\Jignesh\intellejProjects2\seleniumprojects\NABddCucumber\src\main\java\Resources" />
     </key>
   </component>
@@ -125,34 +131,38 @@
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="413" y="115" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.736@0.0.1366.736" timestamp="1586438731316" />
+    <state x="412" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586852557364">
+      <screen x="0" y="0" width="1366" height="736" />
+    </state>
+    <state x="412" y="222" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.736@0.0.1366.736" timestamp="1586852557364" />
     <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1586357484891">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.736@0.0.1366.736" timestamp="1586357484891" />
-    <state width="1323" height="157" key="GridCell.Tab.0.bottom" timestamp="1586779044871">
+    <state width="1323" height="157" key="GridCell.Tab.0.bottom" timestamp="1586852705904">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="157" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1586779044871" />
-    <state width="1323" height="157" key="GridCell.Tab.0.center" timestamp="1586779044871">
+    <state width="1323" height="157" key="GridCell.Tab.0.bottom/0.0.1366.736@0.0.1366.736" timestamp="1586852705904" />
+    <state width="1323" height="157" key="GridCell.Tab.0.center" timestamp="1586852705904">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="157" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1586779044871" />
-    <state width="1323" height="157" key="GridCell.Tab.0.left" timestamp="1586779044871">
+    <state width="1323" height="157" key="GridCell.Tab.0.center/0.0.1366.736@0.0.1366.736" timestamp="1586852705904" />
+    <state width="1323" height="157" key="GridCell.Tab.0.left" timestamp="1586852705903">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="157" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1586779044871" />
-    <state width="1323" height="157" key="GridCell.Tab.0.right" timestamp="1586779044871">
+    <state width="1323" height="157" key="GridCell.Tab.0.left/0.0.1366.736@0.0.1366.736" timestamp="1586852705903" />
+    <state width="1323" height="157" key="GridCell.Tab.0.right" timestamp="1586852705904">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state width="1323" height="157" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1586779044871" />
+    <state width="1323" height="157" key="GridCell.Tab.0.right/0.0.1366.736@0.0.1366.736" timestamp="1586852705904" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1585920827602">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.736@0.0.1366.736" timestamp="1585920827602" />
-    <state x="379" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1585920746786">
+    <state x="379" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1586852882108">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
-    <state x="379" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1585920746786" />
+    <state x="379" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.736@0.0.1366.736" timestamp="1586852882108" />
     <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586355446136">
       <screen x="0" y="0" width="1366" height="736" />
     </state>
